@@ -4,7 +4,7 @@ const app = express();
 
 app.get('/badges', async (req, res) => {
     const userId = req.query.userId;
-    const limit = req.query.limit || 12;
+    const limit = req.query.limit || 10;
 
     const robloxUrl = `https://badges.roblox.com/v1/users/${userId}/badges?limit=${limit}&sortOrder=Desc`;
 
